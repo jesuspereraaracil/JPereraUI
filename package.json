@@ -1,0 +1,19 @@
+{
+  "name": "@jpereraaracil/jpereraui",
+  "version": "1.0.0",
+  "description": "UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "ui",
+    "react",
+    "components"
+  ],
+  "author": "jpereraaracil",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "typescript": "^5.0.3"
+  }
+}
