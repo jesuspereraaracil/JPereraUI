@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 import { theme } from '../../theme';
+import { TextInputProps } from './TextInput.types';
 
-export const TextInputStyled = styled.input`
+export const TextInputStyled = styled.input<TextInputProps>`
   background-color: ${theme.colors.background};
   border-radius: ${theme.spacing.NORMAL};
   border: 0;
