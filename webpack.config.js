@@ -1,60 +1,35 @@
+const path = require('path');
+
 module.exports = {
-    mode: "development",
-    target: "web",
-    watch: true,
-    entry: "./src/index.ts",
+    mode: 'production',
+    entry: './src/index.ts',
     output: {
-        filename: "index.js",
-        path: __dirname + "/lib",
-        libraryTarget: "commonjs"
+        filename: 'index.js',
+        library: {
+            type: 'umd',
+        },
+        path: path.resolve(__dirname, 'lib'),
     },
+    externals: [
+        "react",
+        "react-dom",
+        "@emotion/core",
+        "@emotion/styled",
+    ],
     resolve: {
-        extensions: [".ts", ".tsx", ".js", ".json", ".scss", ".css"]
+        extensions: ['.ts', '.tsx'],
+        alias: {
+            'react': path.resolve(__dirname, './node_modules/react'),
+            'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
+        }
     },
-    devtool: "source-map",
     module: {
         rules: [
             {
-                test: /\.module\.scss$/,
-                use: [
-                    'style-loader',
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            modules: true,
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.scss$/,
-                exclude: /\.module.(scss)$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    }
-                ]
-            },
-            {
                 test: /\.tsx?$/,
-                loader: "ts-loader"
+                exclude: /node_modules/,
+                loader: "babel-loader",
             },
-            {
-                enforce: "pre", test: /\.js$/,
-                loader: "source-map-loader"
-            }
-        ]
+        ],
     }
 };

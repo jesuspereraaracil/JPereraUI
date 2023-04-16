@@ -5,13 +5,14 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
-    "dist"
+    "lib"
   ],
   "scripts": {
-    "build": "tsc",
-    "prepublish": "npm run build",
-    "test": "jest",
-    "webpack:dev": "npx webpack --config webpack.config.js"
+    "build:tsc": "tsc",
+    "build:webpack": "webpack --config webpack.config.js",
+    "build:watch": "webpack --watch --config webpack.config.js",
+    "build": "rm -rf lib && npm run build:webpack && npm run build:tsc",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "ui",
@@ -26,21 +27,17 @@
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.21.4",
     "@types/react": "^18.0.33",
-    "@types/styled-components": "^5.1.26",
+    "babel": "^6.23.0",
     "babel-loader": "^9.1.2",
-    "css-loader": "^6.7.3",
-    "node-sass": "^8.0.0",
-    "sass-loader": "^13.2.2",
-    "source-map-loader": "^4.0.1",
-    "style-loader": "^3.3.2",
-    "ts-loader": "^9.4.2",
+    "loader": "^2.1.1",
     "typescript": "^5.0.3",
     "webpack": "^5.78.0",
     "webpack-cli": "^5.0.1"
   },
   "peerDependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/styled": "^11.10.6",
     "react": "^18.2.0",
-    "styled-components": "^5.3.9",
     "react-dom": "^18.2.0"
   }
 }
