@@ -1,1 +1,1 @@
-export { TextInput } from './atoms/TextInput';
+export * from './atoms';
