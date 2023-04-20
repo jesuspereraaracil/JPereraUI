@@ -9,6 +9,6 @@ export const TextInput = ({ disabled = false, value, onChangeHandler, placeholde
         onChange={onChangeHandler}
         placeholder={placeholder}
         className={className}
-        error
+        error={error}
     />;
 };
