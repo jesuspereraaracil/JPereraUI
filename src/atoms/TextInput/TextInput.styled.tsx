@@ -5,7 +5,7 @@ import { TextInputProps } from './TextInput.types';
 export const TextInputStyled = styled.input<TextInputProps>`
   background-color: ${theme.colors.background};
   border-radius: ${theme.spacing.NORMAL};
-  border: 0;
+  border: 1px solid ${theme.colors.background};
   color: ${theme.colors.font};
   height: ${theme.spacing.HUGE};
   outline: 0;
