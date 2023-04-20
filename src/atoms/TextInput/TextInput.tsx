@@ -1,9 +1,8 @@
-import React, { ChangeEventHandler } from 'react';
+import React from 'react';
 import { TextInputStyled } from './TextInput.styled';
 import { TextInputProps } from './TextInput.types';
 
-
-export const TextInput: React.FC<TextInputProps> = ({ disabled = false, value, onChangeHandler, placeholder, className }) => {
+export const TextInput = ({ disabled = false, value, onChangeHandler, placeholder, className }: TextInputProps) => {
     return <TextInputStyled
         disabled={disabled}
         value={value}
