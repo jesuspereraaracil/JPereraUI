@@ -4,6 +4,7 @@
   "description": "UI",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
+  "homepage": "https://github.com/jesuspereraaracil/JPereraUI",
   "repository": "https://github.com/jesuspereraaracil/JPereraUI",
   "files": [
     "lib",
