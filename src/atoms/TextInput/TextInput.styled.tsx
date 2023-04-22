@@ -24,7 +24,7 @@ export const TextInputStyled = styled.input<TextInputProps>`
     cursor: not-allowed;
   }
 
-  ${props => props.error && css`
+  ${({ error }) => error && css`
     background-color: ${theme.colors.states.error};
   `}
 `;
