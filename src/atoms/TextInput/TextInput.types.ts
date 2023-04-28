@@ -5,6 +5,6 @@ export interface TextInputProps {
     value?: string;
     onChangeHandler?: ChangeEventHandler;
     placeholder?: string;
-    className?: string;
+    extraClassnames?: string;
     error?: boolean
 }

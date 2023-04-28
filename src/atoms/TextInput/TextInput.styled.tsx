@@ -1,5 +1,4 @@
-import { css } from '@emotion/css';
-import styled from '@emotion/styled';
+import styled, {css} from 'styled-components';
 import { theme } from '../../theme';
 import { TextInputProps } from './TextInput.types';
 
@@ -20,11 +19,20 @@ export const TextInputStyled = styled.input<TextInputProps>`
     box-shadow: 0 0 ${theme.spacing.NORMAL} 0 ${theme.colors.primary};
   }
 
-  &:disabled {
+  ${({disabled}) => disabled && css`
+    background-color: ${theme.colors.background}66;
+    color: ${theme.colors.font}66;
     cursor: not-allowed;
-  }
 
-  ${({ error }) => error && css`
-    background-color: ${theme.colors.states.error};
+    &:hover {
+      box-shadow: 0 0 ${theme.spacing.NORMAL} 0 ${theme.colors.background};
+    }
+  `}
+
+  ${({error}) => error && css`
+    border: 1px solid ${theme.colors.states.error};
+    &:hover {
+      box-shadow: 0 0 ${theme.spacing.NORMAL} 0 ${theme.colors.states.error};
+    }
   `}
 `;

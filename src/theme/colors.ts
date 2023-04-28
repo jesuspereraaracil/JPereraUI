@@ -10,10 +10,11 @@ const palette = {
     black: '#2f2f2f'
 }
 export const colors = {
-    primary: palette.blue,
-    font: palette.black,
-    fontInverse: palette.white,
     background: palette.white,
+    font: palette.black,
+    fontDisabled: palette.grey,
+    fontInverse: palette.white,
+    primary: palette.blue,
     states: {
         error: palette.red,
         warning: palette.yellow,
