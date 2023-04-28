@@ -10,18 +10,13 @@ module.exports = {
         },
         path: path.resolve(__dirname, 'lib'),
     },
-    externals: [
-        "react",
-        "react-dom",
-        "styled-components",
-    ],
+    externals: {
+        "react": "react",
+        "react-dom": "react-dom",
+        "styled-components": "styled-components"
+    },
     resolve: {
         extensions: ['.ts', '.tsx'],
-        alias: {
-            'react': path.resolve(__dirname, './node_modules/react'),
-            'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
-            'styled-components': path.resolve(__dirname, './node_modules/styled-components'),
-        }
     },
     module: {
         rules: [
