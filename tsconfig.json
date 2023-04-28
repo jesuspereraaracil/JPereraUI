@@ -111,5 +111,5 @@
     "skipLibCheck": true
     /* Skip type checking all .d.ts files. */
   },
-  "exclude": ["webpack.config.js", "node_modules", "lib", "types", ".idea"]
+  "exclude": ["webpack.config.js", "node_modules", "lib", "types", ".idea", "jest.config.js"]
 }
