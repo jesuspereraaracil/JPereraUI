@@ -7,7 +7,7 @@ export const TextInputStyled = styled.input<TextInputProps>`
     border-radius: ${theme.spacing.NORMAL};
     border: 1px solid ${theme.colors.border};
     color: ${theme.colors.font};
-    height: ${theme.spacing.HUGE};
+    min-height: ${theme.spacing.HUGE};
     outline: 0;
     padding: ${theme.spacing.SMALL} ${theme.spacing.NORMAL};
 
@@ -42,7 +42,7 @@ export const TextInputStyled = styled.input<TextInputProps>`
     ${({ error }) =>
         error &&
         css`
-            border: 1px solid ${theme.colors.states.error};
+            border: 2px solid ${theme.colors.states.error};
 
             &:focus,
             &:active,

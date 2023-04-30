@@ -6,7 +6,7 @@ exports[`TextInput Should render correctly 1`] = `
   border-radius: 8px;
   border: 1px solid #808080;
   color: #202020;
-  height: 32px;
+  min-height: 32px;
   outline: 0;
   padding: 4px 8px;
 }

@@ -4,6 +4,6 @@ import { TextInputStyled } from '../TextInput/TextInput.styled';
 export const PasswordInput = ({
     extraClassnames,
     ...props
-}: TextInputProps) => (
+}: TextInputProps): JSX.Element => (
     <TextInputStyled {...props} className={extraClassnames} type="password" />
 );

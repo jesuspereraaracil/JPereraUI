@@ -1,0 +1,23 @@
+{/* TextInput.mdx */}
+
+import { Canvas, Meta } from '@storybook/blocks';
+
+import * as TextInputStories from './TextInput.stories';
+
+<Meta of={TextInputStories} />
+
+# TextInput
+
+A TextInput is a place to write.
+
+## Default TextInput
+This is the default behavior of the TextInput.
+<Canvas of={TextInputStories.Default} />
+
+## Error state TextInput
+The TextInput has an error state.
+<Canvas of={TextInputStories.Error} />
+
+## Disabled state TextInput
+The TextInput also has a disabled state
+<Canvas of={TextInputStories.Disabled} />
