@@ -3,5 +3,5 @@ import { spacing } from './spacing';
 
 export const theme = {
     spacing,
-    colors
+    colors,
 };

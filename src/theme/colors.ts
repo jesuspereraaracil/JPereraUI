@@ -1,16 +1,21 @@
 const palette = {
-    red: '#ff2e2e',
-    green: '#41cc44',
-    blue: '#38a9ff',
-    yellow: '#dee03d',
-    violet: '#db42d9',
-    cyan: '#41d6d9',
-    white: '#f2f2f2',
-    grey: '#828282',
-    black: '#2f2f2f'
-}
+    red: '#FF2E2E',
+    green: '#41CC44',
+    blue: '#38A9FF',
+    yellow: '#DEE03D',
+    violet: '#DB42D9',
+    cyan: '#41D6D9',
+    white: '#F0F0F0',
+    lightGrey: '#B0B0B0',
+    grey: '#808080',
+    darkGrey: '#505050',
+    black: '#202020',
+};
 export const colors = {
     background: palette.white,
+    backgroundDisabled: palette.lightGrey,
+    border: palette.grey,
+    borderDisabled: palette.lightGrey,
     font: palette.black,
     fontDisabled: palette.grey,
     fontInverse: palette.white,
@@ -19,6 +24,6 @@ export const colors = {
         error: palette.red,
         warning: palette.yellow,
         success: palette.green,
-        info: palette.blue
-    }
-}
+        info: palette.blue,
+    },
+};

@@ -1,10 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextInput Should render correctly 1`] = `
-<div>
-  <input
-    class=" undefined css-6evgnu"
-    value=""
-  />
-</div>
+.c0 {
+  background-color: #F0F0F0;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  color: #202020;
+  height: 32px;
+  outline: 0;
+  padding: 4px 8px;
+}
+
+.c0:focus,
+.c0:active,
+.c0:focus-visible {
+  border: 1px solid #38A9FF;
+}
+
+.c0:hover {
+  box-shadow: 0 0 8px 0 #38A9FF;
+}
+
+<input
+  class="c0"
+  data-testid="TextInputID"
+/>
 `;
