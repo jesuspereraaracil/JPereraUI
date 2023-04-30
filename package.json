@@ -1,6 +1,6 @@
 {
   "name": "@jpereraaracil/jpereraui",
-  "version": "1.10.1",
+  "version": "1.10.2",
   "description": "UI",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
