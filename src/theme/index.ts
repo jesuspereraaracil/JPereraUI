@@ -1,7 +1,9 @@
 import { colors } from './colors';
 import { spacing } from './spacing';
+import { border } from './border';
 
 export const theme = {
-    spacing,
-    colors,
+  border,
+  spacing,
+  colors,
 };

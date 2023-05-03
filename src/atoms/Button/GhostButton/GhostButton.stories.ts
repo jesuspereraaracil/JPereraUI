@@ -1,34 +1,30 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { TextInput } from './TextInput';
+import { GhostButton } from './GhostButton';
 
-const meta: Meta<typeof TextInput> = {
+const meta: Meta<typeof GhostButton> = {
   /* 👇 The title prop is optional.
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'Atoms/TextInput',
-  component: TextInput,
+  title: 'Atoms/GhostButton',
+  component: GhostButton,
 };
 export default meta;
-type Story = StoryObj<typeof TextInput>;
+type Story = StoryObj<typeof GhostButton>;
 
 export const Default: Story = {
   args: {
-    error: false,
+    text: 'Abracadabra',
     disabled: false,
-  },
-};
-
-export const Error: Story = {
-  args: {
-    error: true,
-    disabled: false,
+    onClick: () => {
+      console.log('CLICKED');
+    },
   },
 };
 
 export const Disabled: Story = {
   args: {
-    error: false,
+    text: 'Abracadabra',
     disabled: true,
   },
 };
