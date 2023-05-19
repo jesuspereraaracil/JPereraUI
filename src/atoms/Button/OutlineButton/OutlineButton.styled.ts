@@ -4,20 +4,20 @@ import { Button } from '../Button';
 
 export const OutlineButtonStyled = styled(Button)`
   background-color: ${theme.colors.background}00;
-  border: ${theme.border.size} solid ${theme.colors.buttons.primary.normal};
+  border: ${theme.border.size} solid ${theme.colors.primary.normal};
   border-radius: ${theme.border.radius};
-  color: ${theme.colors.buttons.primary.normal};
+  color: ${theme.colors.primary.normal};
 
   &:hover {
-    background-color: ${theme.colors.buttons.primary.hover}11;
-    box-shadow: 0 0 0 0 ${theme.colors.buttons.primary.hover};
+    background-color: ${theme.colors.primary.hover}11;
+    box-shadow: 0 0 0 0 ${theme.colors.primary.hover};
   }
 
   &:focus,
   &:active,
   &:focus-visible {
-    border: ${theme.border.size} solid ${theme.colors.buttons.primary.normal};
-    background-color: ${theme.colors.buttons.primary.active}33;
+    border: ${theme.border.size} solid ${theme.colors.primary.normal};
+    background-color: ${theme.colors.primary.active}33;
   }
 
   ${({ disabled }) =>

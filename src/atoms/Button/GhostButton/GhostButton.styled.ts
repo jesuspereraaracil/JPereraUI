@@ -6,18 +6,18 @@ export const GhostButtonStyled = styled(Button)`
   background-color: ${theme.colors.background}00;
   border: 0;
   border-radius: ${theme.border.radius};
-  color: ${theme.colors.buttons.primary.normal};
+  color: ${theme.colors.primary.normal};
 
   &:hover {
-    background-color: ${theme.colors.buttons.primary.hover}11;
-    box-shadow: 0 0 0 0 ${theme.colors.buttons.primary.hover};
+    background-color: ${theme.colors.primary.hover}11;
+    box-shadow: 0 0 0 0 ${theme.colors.primary.hover};
   }
 
   &:focus,
   &:active,
   &:focus-visible {
     border: 0;
-    background-color: ${theme.colors.buttons.primary.active}33;
+    background-color: ${theme.colors.primary.active}33;
   }
 
   ${({ disabled }) =>

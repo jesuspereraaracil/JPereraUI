@@ -6,19 +6,22 @@ export const TextInputStyled = styled.input<TextInputProps>`
   background-color: ${theme.colors.background};
   border-radius: ${theme.border.radius};
   border: ${theme.border.size} solid ${theme.colors.border};
+  box-sizing: border-box;
   color: ${theme.colors.font};
-  min-height: ${theme.spacing.HUGE};
+  font-size: ${theme.spacing.BIG};
   outline: 0;
+  margin: ${theme.spacing.SMALL} ${theme.spacing.NORMAL};
   padding: ${theme.spacing.SMALL} ${theme.spacing.NORMAL};
+  width: 100%;
 
   &:focus,
   &:active,
   &:focus-visible {
-    border: ${theme.border.size} solid ${theme.colors.primary};
+    border: ${theme.border.size} solid ${theme.colors.primary.normal};
   }
 
   &:hover {
-    box-shadow: 0 0 ${theme.spacing.NORMAL} 0 ${theme.colors.primary};
+    box-shadow: 0 0 ${theme.spacing.NORMAL} 0 ${theme.colors.primary.normal};
   }
 
   ${({ disabled }) =>

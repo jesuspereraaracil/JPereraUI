@@ -1,8 +1,8 @@
 const palette = {
   blues: {
-    light: '#6bbfff',
+    light: '#85caff',
     normal: '#38A9FF',
-    dark: '#0593ff',
+    dark: '#0085eb',
   },
   reds: {
     light: '#ff6161',
@@ -27,18 +27,15 @@ export const colors = {
   font: palette.black,
   fontDisabled: palette.grey,
   fontInverse: palette.white,
-  primary: palette.blues.normal,
   states: {
     error: palette.reds.normal,
     warning: palette.yellow,
     success: palette.green,
     info: palette.blues.normal,
   },
-  buttons: {
-    primary: {
-      normal: palette.blues.normal,
-      hover: palette.blues.dark,
-      active: palette.blues.light,
-    },
+  primary: {
+    normal: palette.blues.normal,
+    hover: palette.blues.dark,
+    active: palette.blues.light,
   },
 };

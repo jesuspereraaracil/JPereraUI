@@ -18,7 +18,7 @@ const disabledCSS = css`
 `;
 
 export const ButtonStyled = styled.button<ButtonProps>`
-  background-color: ${theme.colors.buttons.primary.normal};
+  background-color: ${theme.colors.primary.normal};
   border-radius: ${theme.border.radius};
   border: 0;
   color: ${theme.colors.font};
@@ -28,16 +28,15 @@ export const ButtonStyled = styled.button<ButtonProps>`
   padding: ${theme.spacing.SMALL} ${theme.spacing.NORMAL};
 
   &:hover {
-    background-color: ${theme.colors.buttons.primary.hover};
-    box-shadow: 0 0 ${theme.spacing.SMALL} 0
-      ${theme.colors.buttons.primary.hover};
+    background-color: ${theme.colors.primary.hover};
+    box-shadow: 0 0 ${theme.spacing.SMALL} 0 ${theme.colors.primary.hover};
   }
 
   &:focus,
   &:active,
   &:focus-visible {
     border: 0;
-    background-color: ${theme.colors.buttons.primary.active};
+    background-color: ${theme.colors.primary.active};
   }
 
   ${({ disabled }) =>
