@@ -1,6 +1,11 @@
 import React from 'react';
 import { RangeInputStyled } from './RangeInput.styled';
+import { Container } from '../Container/Container.styled';
 
 export const RangeInput = (): React.JSX.Element => {
-  return <RangeInputStyled />;
+  return (
+    <Container>
+      <RangeInputStyled />
+    </Container>
+  );
 };

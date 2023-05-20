@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextInput Should render correctly 1`] = `
-.c0 {
+.c1 {
   background-color: #F0F0F0;
   border-radius: 8px;
   border: 1px solid #808080;
@@ -9,23 +9,45 @@ exports[`TextInput Should render correctly 1`] = `
   color: #202020;
   font-size: 16px;
   outline: 0;
-  margin: 4px 8px;
   padding: 4px 8px;
   width: 100%;
 }
 
-.c0:focus,
-.c0:active,
-.c0:focus-visible {
+.c1:focus,
+.c1:active,
+.c1:focus-visible {
   border: 1px solid #38A9FF;
 }
 
-.c0:hover {
+.c1:hover {
   box-shadow: 0 0 8px 0 #38A9FF;
 }
 
-<input
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 4px 8px;
+  width: 100%;
+}
+
+<div
   class="c0"
-  data-testid="TextInputID"
-/>
+>
+  <input
+    class="c1"
+    data-testid="TextInputID"
+  />
+</div>
 `;

@@ -21,11 +21,12 @@ export const ButtonStyled = styled.button<ButtonProps>`
   background-color: ${theme.colors.primary.normal};
   border-radius: ${theme.border.radius};
   border: 0;
+  box-sizing: border-box;
   color: ${theme.colors.font};
   cursor: pointer;
-  min-height: ${theme.spacing.HUGE};
   outline: 0;
   padding: ${theme.spacing.SMALL} ${theme.spacing.NORMAL};
+  width: 100%;
 
   &:hover {
     background-color: ${theme.colors.primary.hover};

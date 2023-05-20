@@ -10,7 +10,6 @@ export const TextInputStyled = styled.input<TextInputProps>`
   color: ${theme.colors.font};
   font-size: ${theme.spacing.BIG};
   outline: 0;
-  margin: ${theme.spacing.SMALL} ${theme.spacing.NORMAL};
   padding: ${theme.spacing.SMALL} ${theme.spacing.NORMAL};
   width: 100%;
 
