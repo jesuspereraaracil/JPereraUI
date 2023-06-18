@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {theme} from '../../theme';
+import { theme } from '../../theme';
 
 export const ChipStyled = styled.div`
   background-color: ${theme.colors.primary.normal};

@@ -1,7 +1,7 @@
-import {ChipProps} from './Chip.types';
+import { ChipProps } from './Chip.types';
 import React from 'react';
-import {ChipStyled} from './Chip.styled';
+import { ChipStyled } from './Chip.styled';
 
-export const Chip = ({text}: ChipProps): React.JSX.Element => {
+export const Chip = ({ text }: ChipProps): React.JSX.Element => {
   return <ChipStyled>{text}</ChipStyled>;
 };
