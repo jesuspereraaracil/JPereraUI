@@ -4,7 +4,5 @@ import React from 'react';
 
 export const Button = (props: ButtonProps): React.JSX.Element => {
   const { text } = props;
-  return (
-    <ButtonStyled {...props}>{text}</ButtonStyled>
-  );
+  return <ButtonStyled {...props}>{text}</ButtonStyled>;
 };
