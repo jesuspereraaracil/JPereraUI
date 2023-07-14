@@ -6,5 +6,6 @@ export const ChipStyled = styled.div`
   border-radius: ${theme.spacing.HUGE};
   box-sizing: border-box;
   padding: ${theme.spacing.SMALL} ${theme.spacing.NORMAL};
+  user-select: none;
   width: fit-content;
 `;

@@ -21,5 +21,6 @@
     ".idea",
     "jest.config.js",
     "**/*.stories.*",
-    "**/*.test.*"]
+    "**/*.test.*",
+    "setupTests.ts"]
 }

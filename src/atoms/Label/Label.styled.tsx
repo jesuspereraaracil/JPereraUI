@@ -9,4 +9,5 @@ export const LabelStyled = styled.label`
   justify-content: center;
   outline: 0;
   padding: ${theme.spacing.SMALL} ${theme.spacing.NORMAL};
+  width: fit-content;
 `;

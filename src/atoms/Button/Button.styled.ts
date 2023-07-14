@@ -26,7 +26,7 @@ export const ButtonStyled = styled.button<ButtonProps>`
   cursor: pointer;
   outline: 0;
   padding: ${theme.spacing.SMALL} ${theme.spacing.NORMAL};
-  width: 100%;
+  width: ${({flow}) => flow ? '100%': 'fit-content'};
 
   &:hover {
     background-color: ${theme.colors.primary.hover};
