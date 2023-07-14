@@ -1,10 +1,12 @@
 const path = require('path');
 
 module.exports = {
+
     mode: 'production',
     entry: './src/index.ts',
     output: {
         filename: 'index.js',
+        globalObject: 'this',
         library: {
             type: 'umd',
         },
