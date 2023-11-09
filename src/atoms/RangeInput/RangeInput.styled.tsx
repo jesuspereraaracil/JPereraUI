@@ -1,5 +1,5 @@
-import styled, {css} from 'styled-components';
-import {theme} from '../../theme';
+import styled, { css } from 'styled-components';
+import { theme } from '../../theme';
 
 const thumb = css`
   appearance: none;
@@ -20,7 +20,7 @@ const thumb = css`
   }
 `;
 
-export const RangeInputStyled = styled.input.attrs({type: 'range'})`
+export const RangeInputStyled = styled.input.attrs({ type: 'range' })`
   appearance: none;
   border-radius: ${theme.border.radius};
   box-sizing: border-box;

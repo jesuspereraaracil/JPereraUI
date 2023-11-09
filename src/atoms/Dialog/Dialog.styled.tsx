@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import {theme} from '../../theme';
-import {DialogStyledProps} from './Dialog.types';
+import { theme } from '../../theme';
+import { DialogStyledProps } from './Dialog.types';
 
 export const DialogStyled = styled.dialog<DialogStyledProps>`
   background-color: ${theme.colors.background};
