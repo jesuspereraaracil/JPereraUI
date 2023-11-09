@@ -6,7 +6,7 @@ const meta: Meta<typeof GhostButton> = {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'Atoms/GhostButton',
+  title: 'Atoms/Button/GhostButton',
   component: GhostButton,
 };
 export default meta;

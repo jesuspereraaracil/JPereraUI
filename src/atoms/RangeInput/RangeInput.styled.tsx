@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
-import { theme } from '../../theme';
+import styled, {css} from 'styled-components';
+import {theme} from '../../theme';
 
 const thumb = css`
   appearance: none;
@@ -9,17 +9,18 @@ const thumb = css`
   border-radius: 50%;
   box-sizing: border-box;
   height: ${theme.spacing.BIG};
+  outline: 0;
   padding: ${theme.spacing.SMALL} ${theme.spacing.NORMAL};
   transition: all 0.2s ease;
   width: ${theme.spacing.BIG};
 
   &:hover {
+    height: ${theme.spacing.HUGE};
     border-radius: ${theme.border.radius};
-    height: calc(${theme.spacing.HUGE} - 6px);
   }
 `;
 
-export const RangeInputStyled = styled.input.attrs({ type: 'range' })`
+export const RangeInputStyled = styled.input.attrs({type: 'range'})`
   appearance: none;
   border-radius: ${theme.border.radius};
   box-sizing: border-box;
@@ -34,11 +35,11 @@ export const RangeInputStyled = styled.input.attrs({ type: 'range' })`
     height: ${theme.spacing.HUGE};
   }
 
-  ::-webkit-slider-thumb {
+  &::-webkit-slider-thumb {
     ${thumb}
   }
 
-  ::-moz-range-thumb {
+  &::-moz-range-thumb {
     ${thumb}
   }
 `;

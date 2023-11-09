@@ -6,7 +6,7 @@ const meta: Meta<typeof OutlineButton> = {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'Atoms/OutlineButton',
+  title: 'Atoms/Button/OutlineButton',
   component: OutlineButton,
 };
 export default meta;
